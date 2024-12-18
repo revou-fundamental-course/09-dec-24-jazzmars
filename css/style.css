@@ -148,7 +148,7 @@ article {
 }
 
 .buttonCTA {
-    align-items: center;
+    display: block;
     text-align: center;
     padding:20px;
     width: 180px;
