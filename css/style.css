@@ -147,6 +147,15 @@ article {
     display: flex;
 }
 
+.buttonCTA {
+    align-items: center;
+    text-align: center;
+    padding:20px;
+    width: 180px;
+    background-color: black;
+    color: white;
+}
+
 
 footer {
     text-align: center;
