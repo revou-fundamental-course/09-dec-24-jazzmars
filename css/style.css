@@ -137,6 +137,17 @@ article {
 
 }
 
+.package-content{
+    display:flex;
+    
+}
+
+.destination {
+    padding: 15px;
+    display: flex;
+}
+
+
 footer {
     text-align: center;
 }
