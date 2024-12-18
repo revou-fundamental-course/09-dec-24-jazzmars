@@ -86,6 +86,30 @@ body {
     text-align: center;
 }
 
+table {
+    border-spacing: 15px;
+}
+
+.number {
+    height: 30px;
+    width: 30px;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    align-content: center;
+}
+
+
+.left-align{
+    text-align: left;
+}
+
+.info {
+    margin-top: 30px;
+    text-align: left;
+}
+
 .contact {
     padding: 30px;
     background-color: rgb(236, 236, 243);
