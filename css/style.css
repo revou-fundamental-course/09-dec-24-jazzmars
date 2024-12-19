@@ -222,7 +222,7 @@ table {
 
 /*-- Our Package --*/
 .our-package-header {
-    background-color:rgb(186, 185, 185);
+    background-color: rgb(236, 236, 243);
     margin-top: 24px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -234,14 +234,22 @@ article {
 }
 
 .package-content{
+    margin-top: 40px;
     display:flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
 
+.destination-info{
+    width: 300px;
+    display: flex;
 }
 
 .destination {
     padding: 15px;
     display: flex;
     text-align: left;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -250,14 +258,14 @@ article {
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
+    flex-direction: column;
+    border-radius: 30px;
 }
 
 .travel-card {
-    box-sizing: border-box;
+    padding: 10px;
     width: 320px;
-    height: 250px;
-    position: absolute;
-    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,7 +294,7 @@ article {
 
 footer {
     text-align: center;
-    background-color:rgb(186, 185, 185);
+    background-color: rgb(236, 236, 243);
     margin-top: 24px;
     padding-top: 20px;
     padding-bottom: 40px;
