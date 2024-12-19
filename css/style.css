@@ -209,6 +209,7 @@ table {
     padding: 30px;
     background-color: rgb(236, 236, 243);
     border-radius: 7px;
+    padding-bottom: 50px;
 }
 
 .send-button {
@@ -234,10 +235,11 @@ article {
 }
 
 .package-content{
-    margin-top: 40px;
+    margin-top: 60px;
     display:flex;
     width: 100%;
     margin-bottom: 40px;
+    align-self: center;
 }
 
 .destination-info{
@@ -251,6 +253,8 @@ article {
     text-align: left;
     flex-direction: column;
     width: 100%;
+    flex: 1;
+    align-items: center;
 }
 
 .travel-photo {
