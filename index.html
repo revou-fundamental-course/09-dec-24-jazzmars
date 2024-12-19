@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>Jessica's site</title>
     <link rel="stylesheet" href="css/style.css">
     
@@ -13,19 +13,22 @@
     <header class="main-header">
         <div class="home-icon"></div>
         <div class="menu-button">
-            <div class="button"><a href="#">Home</a></div>
-            <div class="button"><a href="#our-package-section">Our Package</a></div>
-            <div class="button"><a href="#call-us">Call Us</a></div>
+            <nav>
+            <a href="#home">Home</a>
+            <a href="#our-package-section">Our Package</a>
+            <a href="#call-us">Call Us</a>
             </nav>
         </div>
     </header>
 
     <hr>
     <main>
+        <section id="home">
         <header class="main-content-header">
             <h1>Your Trusted Travel Agent</h1>
             <h3>Your happiness is our happiness</h3>
         </header>
+        </section>
 
         <!---Home--->
         <section class="main-container">
@@ -46,20 +49,20 @@
                 <hr>
 
                 <div class="info">
-                    <b>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</b>
+                    <b>Ayo travel bersama kami! Tidak perlu lagi repot menyiapkan perjalanan anda, semua akan kami urus.</b>
                 </div>
                 <table>
                     <tr>
                         <td><div class="number">1</div></td>
-                        <td style="text-align: left;">Your first feature, written in the form of a benefit statement.</td>
+                        <td style="text-align: left;">Pilih tujuan anda.</td>
                     </tr>
                     <tr>
                         <td><div class="number">2</div></td>
-                        <td style="text-align: left;">Your second feature, written in the form of a benefit statement.</td>
+                        <td style="text-align: left;">Pilih preferensi anda.</td>
                     </tr>
                     <tr>
                         <td><div class="number">3</div></td>
-                        <td style="text-align: left;">Your third feature, written in the form of a benefit statement.</td>
+                        <td style="text-align: left;">Kami akan urus semuanya.</td>
                     </tr>
                 </table>
 
@@ -68,34 +71,39 @@
             </aside>
             <aside class="main-item">
                 <div class="contact">
-                    <b>Contact Us</b>
-                    <br>
+                    <b><h1>Contact Us</h1></b>
                     <p>Sales akan menghubungi anda 1x24 jam setelah data anda kami terima.</p>
-                    <form method="post">
-                        <label for="name"><b>Your Name:</b></label>
+                    <br>
+                    <form id="contactForm">
+                        <div class="input-group" style="margin-right: 20px;">
+                            <label for="name">Name</label>
+                            <input id="name" placeholder="Name" type="text"/>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                
+                        <div class="input-group" style="margin-right: 20px;">
+                            <label for="email">Email</label>
+                            <input id="email" placeholder="example@email.com" type="email"/>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                
+                        <div class="input-group">
+                            <label for="options">Select Option</label>
+                            <select id="options">
+                                <option value="">Select option</option>
+                                <option value="beach">Beach</option>
+                                <option value="mountain">Mountain</option>
+                                <option value="city">City</option>
+                            </select>
+                            <span class="error-message" id="optionsError"></span>
+                        </div>
+                <br>
+                        <button type="submit">SEND</button>
                         <br>
-                        <input id="name" type="text" />
-                        <br>
-                        <br>
-                        <label for="email"><b>Email address:</b></label>
-                        <br>
-                        <input id="email" type="text" />
-            
-                        <br>
-                        <br>
-                        <b>What are you interested in?</b>
-                        <br>
-                        <select>
-                            <optgroup>
-                                <option selected>Select option</option>
-                                <option>Beach</option>
-                                <option>Mountain</option>
-                            </optgroup>
-                        </select>
-                        
-                        <br>
-                        <br>
-                        <div class="send-button">SEND</div>
+                    </form>
+                
+                    <!-- Toast message -->
+                    <div id="toast" class="toast"></div>
             
                     </form>
                 </div>
@@ -109,26 +117,44 @@
             </header>
             <article>
                 <div class="package-content">
-                    <div class="destination"><b>Bali</b>
-                        <br>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik
+                    <div class="destination">
+                        <div class="travel-photos">
+                            <img src="assets/jepang.jpg" style="opacity: 0.3;">
+                        </div>
+                        <div class="travel-card">
+                        <p><b>Jepang</b></p>
+                        <p>Travel dan wisata di Jepang. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
                     </div>
-                    <div class="destination"><b>Jepang</b>
-                        <br>Travel dan wisata di Jepang. Kunjungi cagar budaya dan kuliner yang menarik
-                    </div>
-                    <div class="destination"><b>Singapore</b>
-                        <br>This description supports and extends the bullet points.
+                    <div class="destination">
+                        <div class="travel-photos">
+                        <img src="assets/singapore.webp" style="opacity: 0.3;">
+                        </div>
+                        <div class="travel-card">
+                        <p><b>Singapura</b></p>
+                        <p>Travel dan wisata di Singapura. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
                     </div>
                 </div>
-                <hr>
                 <div class="package-content">
-                    <div class="destination"><b>Bandung</b>
-                    <br>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik
+                    <div class="destination">
+                        <div class="travel-photos">
+                        <img src="assets/bali.webp" style="opacity: 0.3;">
+                        </div>
+                        <div class="travel-card">
+                            <p><b>Bali</b></p>
+                            <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
+                        
                     </div>
-                    <div class="destination"><b>Surabaya</b>
-                    <br>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik
-                    </div>
-                    <div class="destination"><b>Jakarta</b>
-                    <br>Travel dan wisata di Jakarta. Kunjungi cagar budaya dan kuliner yang menarik
+                    <div class="destination">
+                        <div class="travel-photos">
+                        <img src="assets/jakarta.webp" style="opacity: 0.3;">
+                        </div>
+                        <div class="travel-card">
+                        <p><b>Jakarta</b></p>
+                        <p>Travel dan wisata di Jakarta. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -137,17 +163,17 @@
         </section>
         <!---CTA-->
         <section id="call-us">
+            <div class="call-us">
             <header class="main-content-header">
             <h1>Call Us</h1>
             <h3>Lorem Ipsum</h3>
 
-            <div class="buttonCTA">CALL TO ACTION</div>
+            <button class="buttonCTA" type="submit">CALL TO ACTION</button>
             </header>
+            </div>
         </section>
 
     </main>
-
-    <hr>
     
     <footer>
         <span>Made by Jessica M (C) 2024</span>
